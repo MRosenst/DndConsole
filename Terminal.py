@@ -92,8 +92,6 @@ def roll_die(quantity, die, modifier):
 
 
 class Shell(Cmd):
-    character: Character
-
     def __init__(self, character):
         Cmd.__init__(self)
         self.character = character
