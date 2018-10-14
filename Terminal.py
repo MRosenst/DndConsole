@@ -4,8 +4,6 @@ from cmd import Cmd
 
 
 class Character:
-    max_hp: int
-
     def __init__(self, name, ability_scheme, max_hp, armor_class, coin):
         self.name = name
         self.ability_scheme = ability_scheme
@@ -16,10 +14,6 @@ class Character:
 
 
 class AbilityScheme:
-    base_abilities: dict
-    specialties: dict
-    proficiency_bonus: int
-
     def __init__(self, base_abilities, specialties, proficiency_bonus):
         self.base_abilities = base_abilities
         self.specialties = specialties
@@ -52,9 +46,6 @@ class AbilityScheme:
 
 
 class Item:
-    name: str
-    weight: int
-
     def __init__(self, name, weight):
         self.name = name
         self.weight = weight
@@ -86,8 +77,6 @@ class Attack:
 
 # TODO implement this
 class Class:
-    name: str
-
     def __init__(self, name, spell_list):
         self.name = name
         self.spell_list = spell_list
